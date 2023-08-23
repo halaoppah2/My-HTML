@@ -1,0 +1,11 @@
+body{
+    background-image: url(images/building.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin-inline: 10px;
+}

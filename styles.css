@@ -1,0 +1,49 @@
+body{
+  background-color: rgb(215, 221, 221)
+}
+
+a{
+    text-decoration: none;
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 10px;
+    color: white;
+}
+
+button{
+    background-color: tomato;
+    border: none;
+}
+
+button:hover{
+    background-color: red;
+    
+}
+
+p{
+    /* background-color: white; */
+    font-size: 15pt;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 10px;
+}
+
+pre{
+    background-color: black;
+    font-size: 15pt;
+    color: pink;
+    padding: 10px;
+    margin: 10px;
+}
+
+mark{
+    background-color: white;
+    color: rgb(20, 1, 4);
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin-inline: 10px;
+}
+
