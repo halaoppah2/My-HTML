@@ -47,3 +47,70 @@ img{
     margin-inline: 10px;
 }
 
+caption{
+    margin: 10px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+table{
+    margin: 10px;
+    border-collapse: collapse;
+    width: 50%;
+    
+}
+
+th, td{
+    border: 3px solid rgb(216, 213, 213);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+th{
+    background-color: tomato;
+    height: 50px;
+}
+
+td{
+    background-color: white;
+    height: 35px;
+}
+
+tr:nth-child(odd){
+    background-color: red;
+}
+
+tr:nth-child(even){
+    background-color: tomato;
+}
+
+ul{
+    list-style-type: square;
+}
+
+.lor{
+    background-color: white;
+    padding: 10px;
+ }
+
+ .jo{
+    font-size: 20pt;
+    margin: 20px;
+ }
+
+ .mo{
+    text-transform: uppercase;
+ }
+
+ iframe{
+    width: 500px;
+    height: 300px;
+    border: solid tomato;
+    border-radius: 5px;
+    margin-inline: 200px;
+ }
+
+
+
+

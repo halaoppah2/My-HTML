@@ -9,13 +9,22 @@
 </head>
 <body>
     <h1>This is a Heading</h1>
+
         <button>
             <a href="home.html" target="_blank">Home</a>
         </button>
+
+        <button>
+            <a href="#table">Table</a>
+        </button>
+
+        <button>
+            <a href="#frame">Iframe</a>
+        </button>
+
     <hr>
 
     <p>This is a paragraph <br>This is also another paragraph</p>
-    
 
 <pre>
     My name is <mark><q>Enoch Oppah</q></mark>
@@ -25,6 +34,93 @@
 </pre>
 
 <a href="home.html" target="_parent"><img src="images/gt.png" alt="gtlogo"></a>
+
+<section id="table">
+<table>
+    <caption>Family Data</caption>
+    <tr>
+        <th>Name</th>
+        <th>Sex</th>
+        <th>Home Town</th>
+        <th>Date of Birth</th>
+    </tr>
+    <tr>
+        <td>Enoch Oppah</td>
+        <td>Male</td>
+        <td>Mankessim</td>
+        <td>25<sup>th</sup>March, 1992</td>
+    </tr>
+    <tr>
+        <td>Samuel Oppah</td>
+        <td>Male</td>
+        <td>Mankessim</td>
+        <td>25<sup>th</sup>March, 1992</td>
+    </tr>
+    <tr>
+        <td>Sarah Oppah</td>
+        <td>Female</td>
+        <td>Mankessim</td>
+        <td>25<sup>th</sup>March, 1992</td>
+    </tr>
+    <tr>
+        <td>Daniel Oppah</td>
+        <td>Male</td>
+        <td>Mankessim</td>
+        <td>25<sup>th</sup>March, 1992</td>
+    </tr>
+    <tr>
+        <td>Efua Motwuah</td>
+        <td>Female</td>
+        <td>Mankessim</td>
+        <td>25<sup>th</sup>March, 1992</td>
+    </tr>
+</table>
+</section>
+
+<ul>
+    <li>Man</li>
+    <li>
+        Woman
+        <ul>
+            <li style="list-style-type: circle;">Llady</li>
+            <li style="list-style-type: circle;">Girl</li>
+        </ul>
+    </li>
+    <li>Lady</li>
+</ul>
+
+<ol type="A">
+    <li>Man</li>
+    <li>Woman</li>
+    <li>Lady</li>
+</ol>
+
+ <dl style="margin: 20px;">
+    <dt>Boy</dt>
+    <dd>-12 years old</dd>
+    <dt>Girl</dt>
+    <dd>-16 years old</dd>
+ </dl>
+
+ <div class="lor">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum vel metus eget dapibus. In dapibus vulputate dui. Morbi vestibulum leo odio, at aliquet tortor pellentesque ut. Suspendisse potenti. Curabitur tristique ex dui, sed maximus dui tincidunt vitae. Nam ut libero sodales, ultricies nunc eu, ullamcorper risus. Curabitur blandit consequat dolor sollicitudin venenatis. Phasellus consequat at nibh sit amet pharetra. Fusce condimentum aliquam nulla, eget mollis nisi accumsan id. Morbi maximus ornare pretium. Phasellus gravida elit velit, ac ullamcorper est bibendum commodo. Mauris at faucibus lacus. Duis sed libero vehicula, vulputate arcu a, laoreet nibh.
+ </div>
+
+ <div class="jo mo">John</div>
+
+<section id="frame">
+ <iframe src="home.html" frameborder="0" title="home"></iframe>
+</section>
+
+ <p id="demo">Enoch Oppah is my name</p>
+
+ <script>
+    document.getElementById("demo").style.fontSize = "25pt";
+    document.getElementById("demo").style.color = "tomato"
+    document.getElementById("demo").style.border = "none"
+    document.getElementById("demo").style.backgroundColor = "white"
+ </script>
+
 
 </body>
 </html>

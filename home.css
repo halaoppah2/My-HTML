@@ -9,3 +9,39 @@ img{
     height: 200px;
     margin-inline: 10px;
 }
+
+table{
+    margin: 10px;
+    border-collapse: collapse;
+    width: 50%;
+    
+}
+
+th, td{
+    border: 3px solid rgb(216, 213, 213);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+th{
+    background-color: tomato;
+    height: 50px;
+}
+
+td{
+    background-color: white;
+    height: 35px;
+}
+
+tr:nth-child(odd){
+    background-color: red;
+}
+
+tr:nth-child(even){
+    background-color: tomato;
+}
+
+ul{
+    list-style-type: square;
+}
