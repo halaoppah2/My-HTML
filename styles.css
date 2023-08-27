@@ -2,6 +2,21 @@ body{
   background-color: rgb(215, 221, 221)
 }
 
+nav{
+background-color: black;
+padding: 20px;
+font-size: 15pt;
+position: fixed;
+width: 100%;
+height: auto;
+margin-top: -25px;
+}
+
+nav a{
+    padding-left: 10px;
+    
+}
+
 a{
     text-decoration: none;
     font-size: 12pt;
@@ -47,6 +62,10 @@ img{
     margin-inline: 10px;
 }
 
+figcaption{
+    margin-inline: 20px;
+}
+
 caption{
     margin: 10px;
     font-size: 15pt;
@@ -89,6 +108,16 @@ ul{
     list-style-type: square;
 }
 
+aside{
+    color: white;
+    font-style: italic;
+    float: right;
+    background-color: teal;
+    width: 30%;
+    padding: 20px;
+    margin-top: -300px;
+}
+
 .lor{
     background-color: white;
     padding: 10px;
@@ -108,9 +137,23 @@ ul{
     height: 300px;
     border: solid tomato;
     border-radius: 5px;
-    margin-inline: 200px;
+    margin-inline: 100px;
+ }
+ form{
+    margin: 20px;
+    
  }
 
+ label{
+    margin-top: 10px;
+ }
 
-
+ .vid{
+    position: absolute;
+    top: 1425px;
+    right: -10px;
+    width: 600px;
+    height: 300px;
+    
+ }
 

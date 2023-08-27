@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="myscript.js">
     <link rel="icon" href="images/gt.png">
     <title>Title page</title>
 </head>
 <body>
+
+<nav>
+    <a href="#">About Us</a>
+    <a href="#">Services</a>
+    <a href="#">Purchase</a>
+    <a href="#">Links</a>
+</nav>
+
     <h1>This is a Heading</h1>
 
         <button>
@@ -33,7 +42,10 @@
     I love anything pink
 </pre>
 
-<a href="home.html" target="_parent"><img src="images/gt.png" alt="gtlogo"></a>
+<figure>
+    <a href="home.html" target="_parent"><img src="images/gt.png" alt="gtlogo"></a>
+    <figcaption>GT Bank Logo</figcaption>
+</figure>
 
 <section id="table">
 <table>
@@ -76,6 +88,10 @@
     </tr>
 </table>
 </section>
+
+<aside>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et nunc neque. Donec eu lacus consequat, efficitur turpis nec, lacinia lacus. Fusce malesuada sapien eu risus hendrerit ornare. Ut non placerat leo, vel pellentesque orci. Cras vulputate elit vitae dolor consequat rutrum. Mauris sit amet convallis est, et malesuada purus. Suspendisse convallis sagittis tortor, et convallis quam auctor eget. Morbi feugiat, dolor suscipit porta scelerisque, mi augue feugiat lectus, vitae congue diam dolor at lectus. Sed venenatis ac elit vitae mattis. Cras tortor turpis, pulvinar sed felis a, tincidunt ultricies est.
+</aside>
 
 <ul>
     <li>Man</li>
@@ -121,6 +137,135 @@
     document.getElementById("demo").style.backgroundColor = "white"
  </script>
 
+ <!-- Name form -->
+
+<form>
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="fname" value="Enoch"><br>
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lname" value="Oppah"><br>
+    <input type="submit" value="submit this form" style="margin-top: 5px;">
+</form>
+
+<!-- Langyage favourite -->
+
+<form>
+    <label for="fav_language">Choose your favourite Languag</label><br>
+    <input type="radio" name="fav_language" id="html" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="java" name="fav_language" value="JAVASCRIPT">
+    <label for="java">JAVASCRIPT</label>
+</form>
+
+<!-- Fruits  -->
+
+<form action="#">
+    <label for="fruits">Choose one fruit</label>
+    <select name="fruits" id="fruits">
+        <option value="Select">Select</option>
+        <option value="Mango">Mango</option>
+        <option value="Coconut">Coconut</option>
+        <option value="Orange">Orange</option>
+        <option value="Pineapple">Pineapple</option><br>
+    </select>
+    <input type="submit" value="click to submit">
+</form>
+
+<!-- Personal details -->
+
+<form action="#">
+    <fieldset>
+        <legend>Personal Details</legend>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fnmae" size="40" value="Enoch" autofocus><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lnmae" value="Oppah" size="40" disabled><br>
+        <label for="home">Home Town</label><br>
+        <input type="text" id="home" name="home" value="Mankessim" size="40" readonly><br>
+        <label for="phone">Telephone</label><br>
+        <input type="tel" id="phone" name="phone" size="40" placeholder="0*********" maxlength="10" required>
+    </fieldset>
+    <button type="button" onclick="alert('Are you sure want to submt? Changes cannot be made after submission. Thank you.')" style="margin-top: 5px;">Submit form</button>
+</form>
+
+<!-- sport -->
+
+<form action="#">
+    <label for="Sport">Select you favourite sport discipline</label><br>
+    <input list="Sport Discipline" name="Sport Discipline">
+    <datalist id="Sport Discipline">
+        <option value="Football">
+        <option value="Basketball">
+        <option value="Handball">
+        <option value="Hockey">
+        <option value="Netball">
+    </datalist><br>
+    <textarea name="text" id="text" cols="30" rows="10" style="margin-top: 5px;">Additional Information about sport discipline</textarea><br>
+    <input type="submit" value="Submit">
+</form>
+
+<!-- user name -->
+
+<form action="#">
+    <label for="user">User Name</label><br>
+    <input type="text" id="user" name="user"><br>
+    <label for="pwd">Password</label><br>
+    <input type="password" id="pwd" name="pwd"><br>
+    <input type="submit" value="Submit" style="margin-top: 5px;">
+    <input type="reset" value="Reset">
+</form>
+
+<!-- date of birth -->
+
+<form action="#">
+    <label for="birth">Date of Birth</label><br>
+    <input type="date" id="birth" name="birth"><br>
+    <label for="appt">Select time</label><br>
+    <input type="time" id="appt" name="appt"><br>
+    <label for="week">Select week</label><br>
+    <input type="week" id="week" name="week">
+    <input type="submit" value="Submit" style="margin-top: 5px;">
+</form>
+
+<!-- file -->
+
+<form action="#">
+    <label for="myfile">Select a file</label>
+    <input type="file" id="myfile" name="myfile"><br>
+    <input type="submit" value="Submit" style="margin: 5px;">
+</form>
+
+<!-- number of children -->
+
+<form action="#">
+    <label for="quantity">Number of children</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+    <input type="submit" value="Submit" style="margin: 5px;">
+</form>
+
+<!-- number of staff -->
+
+<form action="#">
+    <label for="quantity">Number of staff</label>
+    <input type="number" id="quantity" name="quantity" step="5"  min="0" max="50"><br>
+    <input type="submit" value="Submit" style="margin: 5px;">
+</form>
+
+<!-- search engine -->
+
+<form action="#" autocomplete="on">
+    <label for="mysearch">Search Engine</label>
+    <input type="search" id="mysearch" name="mysearch">
+    <input type="submit" value="Submit" style="margin: 5px;">
+</form>
+
+<iframe class="vid" src="video/figma.mp4" frameborder="0"></iframe>
+
+<iframe width="420" height="345"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
 
 </body>
 </html>
