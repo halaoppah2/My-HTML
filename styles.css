@@ -7,27 +7,66 @@ background-color: black;
 padding: 20px;
 font-size: 15pt;
 position: fixed;
+top: 0;
 width: 100%;
 height: auto;
-margin-top: -25px;
+z-index: 100;
 }
 
 nav a{
-    padding-left: 10px;
-    
-}
-
-a{
     text-decoration: none;
     font-size: 12pt;
     font-weight: bold;
     margin: 10px;
+    padding-left: 10px;
+    color: white;
+}
+
+.drop-down{
+    position: relative;
+    display: inline-block;
+}
+
+.drop-down-content{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: tomato;
+    z-index: 1;
+}
+
+.drop-down:hover .drop-down-content{
+    display: block;
+}
+
+.drop-down-content li{
+    color: black;
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    border-bottom-style: dotted;
+    
+}
+
+.drop-down-content li:last-child{
+    border-bottom: none;
+}
+
+.drop-down-content li:hover{
+    background-color: red;
     color: white;
 }
 
 button{
     background-color: tomato;
     border: none;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
 }
 
 button:hover{
@@ -62,6 +101,10 @@ img{
     margin-inline: 10px;
 }
 
+figure:hover a{
+    opacity: 0.5;
+}
+
 figcaption{
     margin-inline: 20px;
 }
@@ -70,6 +113,17 @@ caption{
     margin: 10px;
     font-size: 15pt;
     font-weight: bold;
+}
+
+ol{
+    background-color: lightgray;
+    padding: 30px;
+    margin: 20px;
+}
+
+ol li{
+    background-color: white;
+    padding: 5px;
 }
 
 table{
@@ -139,9 +193,35 @@ aside{
     border-radius: 5px;
     margin-inline: 100px;
  }
+
  form{
     margin: 20px;
-    
+    border-radius: 5px;
+    outline: none; 
+ }
+
+
+ input[type="text"]{
+    padding: 5px;
+    border: none;
+    outline: none; 
+ }
+
+ input[type="text"]:focus{
+    background-color: lightblue;
+    color: white;
+ }
+
+ input[type="search"]{
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out;
+ }
+
+ input[type="search"]:focus{
+    width: 50%;
  }
 
  label{
@@ -150,10 +230,12 @@ aside{
 
  .vid{
     position: absolute;
-    top: 1425px;
+    top: 1520px;
     right: -10px;
     width: 600px;
     height: 300px;
-    
  }
 
+
+
+ 
