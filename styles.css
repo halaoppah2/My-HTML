@@ -1,11 +1,13 @@
 body{
-  background-color: rgb(215, 221, 221)
+  background-color: rgb(215, 221, 221);
+  margin: 0;
+
+  
 }
 
 nav{
 background-color: black;
 padding: 20px;
-font-size: 15pt;
 position: fixed;
 top: 0;
 width: 100%;
@@ -60,6 +62,8 @@ nav a{
 button{
     background-color: tomato;
     border: none;
+    transition-duration: 0.4s;
+    padding: 10px;
 }
 
 button a{
@@ -67,10 +71,12 @@ button a{
     color: white;
     font-size: 12pt;
     font-weight: bold;
+    
 }
 
 button:hover{
     background-color: red;
+    box-shadow: 0 0 10px rgb(124, 117, 117);
     
 }
 
@@ -99,6 +105,7 @@ img{
     width: 200px;
     height: 200px;
     margin-inline: 10px;
+    border-radius: 10px;
 }
 
 figure:hover a{
@@ -174,7 +181,7 @@ aside{
 
 .lor{
     background-color: white;
-    padding: 10px;
+    padding: 20px;
  }
 
  .jo{
@@ -217,13 +224,20 @@ aside{
     outline: none;
     border: none;
     border-radius: 5px;
-    transition: width 0.4s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
  }
 
  input[type="search"]:focus{
     width: 50%;
+    box-shadow: 0 0 7px rgb(156, 153, 153);
  }
 
+ .tooltip{
+    visibility: hidden;
+ }
+
+ 
  label{
     margin-top: 10px;
  }
@@ -236,6 +250,59 @@ aside{
     height: 300px;
  }
 
+ .bar{
+    background-color: teal;
+    width: 400px;
+    height: auto;
+    transition: all 2s;
+    margin-top: 10px;
+ }
 
+ .bar:hover{
+    width: 100%;
+    background-color: tomato;
+ }
 
- 
+ .bar:hover li{
+    color: white;
+    padding-inline: 80px;
+
+ }
+
+ .bar li{
+    display: inline-flex;
+    padding: 5px;
+    margin: 5px;
+    font-size: 12pt;
+    text-align: center;
+ }
+
+ .pagination{
+    display: block;
+    padding-top: 30px;
+    margin: 10px;
+ }
+
+ .pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 15pt;
+ }
+
+ .pagination a.active{
+    background-color: tomato;
+    border-radius: 5px;    
+}
+
+.pagination a.active:hover{
+    color: white;
+    background-color: red;
+}
+
+ .pagination a:not(.active):hover{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    transition: background 1s;
+ }
